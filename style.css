@@ -2,12 +2,18 @@
     height: 80px;
     width: 80px;
     background-color: chartreuse;
-    transition: background-color 0.8ms;
+    transition: background-color,width 3s;
+    transition-timing-function: ease-in-out;
+    top: 0%;
+    
+    margin: 20px;
     border-radius: 0%;
     
 }
 .div:hover{
     background-color: aqua;
     border-radius: 50%;
+    width: 200px;
+    top: 20%;
 
 }
