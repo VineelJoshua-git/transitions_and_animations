@@ -2,23 +2,76 @@
     height: 80px;
     width: 80px;
     background-color: chartreuse;
-    transition: all 3s ease-in-out;
-    position: relative;
-    top: 0%;
-    margin: 20px;
+    transition: all 2s ease-in-out;
+    position: absolute;
+    /* margin: 20px; */
+    top:0px;
+    left: 0%;
     border-radius: 0%;
     text-align: center;
     line-height: 80px;
     color:rebeccapurple;
     font-size: large;
+    animation: first 2s forwards;
+
 
     
 }
-.div:hover{
-    background-color: aqua;
-    border-radius: 50%;
-    width: 200px;
-    top: 100px;
+.div1{
+    height:80px;
+    width:80px;
+    background-color:aqua;
+    transition: all 2s ease-in-out;
 
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    text-align:center;
+    line-height: 80px;
+    color: white;
+    font-size: large;
+    animation: second 2s forwards;
+    animation-delay: 2s;
 
 }
+@keyframes first{
+
+    0%{
+        width: 80px;
+
+    }
+    25%{
+        width: calc(100% -80px);
+    }
+    75%{
+        width: calc(100% - 80px);
+    }
+    100%{
+        width: calc(100% - 80px);
+    }
+}
+@keyframes second{
+    0%{
+        height: 80px;
+    }
+    50%{
+        height: 100%;
+    }
+    100%{
+        height: 80px;
+    }
+}
+ .div:hover{
+    /* background-color: aqua;
+    border-radius: 50%; 
+    width:calc(100% - 80px);
+    text-align: center;
+    top: 100px;  */
+    animation: first 8s forwards;
+}
+.div1:hover{
+    /* background-color: brown;
+    height: calc(100% - 80px);
+    text-align: center; */
+    animation: second 4s 2s forwards;
+} 
