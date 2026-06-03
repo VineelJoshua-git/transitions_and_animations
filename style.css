@@ -1,7 +1,15 @@
+html,body{
+    height: 100%;
+    margin: 0%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
 .div{
     height: 80px;
     width: 80px;
-    background-color: chartreuse;
+    background-color:green;
     transition: all 2s ease-in-out;
     position: absolute;
     /* margin: 20px; */
@@ -10,7 +18,7 @@
     border-radius: 0%;
     text-align: center;
     line-height: 80px;
-    color:rebeccapurple;
+    color:white;
     font-size: large;
     /* animation: first 2s forwards; */
 
@@ -20,7 +28,7 @@
 .div1{
     height:80px;
     width:80px;
-    background-color:aqua;
+    background-color:red;
     transition: all 2s ease-in-out;
 
     position: absolute;
@@ -28,7 +36,7 @@
     right: 0%;
     text-align:center;
     line-height: 80px;
-    color: white;
+    color:white;
     font-size: large;
     /* animation: second 2s forwards;
     animation-delay: 2s; */
@@ -41,7 +49,7 @@
 
     }
     25%{
-        width: calc(100% -80px);
+        width: calc(100% - 80px);
     }
     75%{
         width: calc(100% - 80px);
@@ -61,7 +69,7 @@
         height: 80px;
     }
 }
- .div:hover{
+.container:hover .div{
     /* background-color: aqua;
     border-radius: 50%; 
     width:calc(100% - 80px);
@@ -75,6 +83,6 @@
     text-align: center;
     animation: second 4s 2s forwards;
 }  */
-.div:hover + .div1{
+.container:hover .div1{
     animation: second 4s 2s forwards;
 }
