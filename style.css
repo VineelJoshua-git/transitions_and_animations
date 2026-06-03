@@ -12,7 +12,7 @@
     line-height: 80px;
     color:rebeccapurple;
     font-size: large;
-    animation: first 2s forwards;
+    /* animation: first 2s forwards; */
 
 
     
@@ -30,8 +30,8 @@
     line-height: 80px;
     color: white;
     font-size: large;
-    animation: second 2s forwards;
-    animation-delay: 2s;
+    /* animation: second 2s forwards;
+    animation-delay: 2s; */
 
 }
 @keyframes first{
@@ -47,7 +47,7 @@
         width: calc(100% - 80px);
     }
     100%{
-        width: calc(100% - 80px);
+        width: 80px;
     }
 }
 @keyframes second{
@@ -69,9 +69,12 @@
     top: 100px;  */
     animation: first 8s forwards;
 }
-.div1:hover{
-    /* background-color: brown;
+/* .div1:hover{
+    background-color: brown;
     height: calc(100% - 80px);
-    text-align: center; */
+    text-align: center;
     animation: second 4s 2s forwards;
-} 
+}  */
+.div:hover + .div1{
+    animation: second 4s 2s forwards;
+}
